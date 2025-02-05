@@ -192,8 +192,7 @@ h1{
 /* Ventana emergente */
 
 .popup {
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
