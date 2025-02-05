@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros realizados</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+
+<div class="container">
+    <h1>STOCK Y CARGA DE LIBROS DISPONIBLES</h1>
+
+    <form id="upload-book-form">
+        <div class="container-form-flex">
+            <div class="libro-caja">
+                <h3>Nombre del libro</h3>
+                <input type="text" id="libro" name="libro" placeholder="Nombre--nivel--version--editorial">   
+            </div>             
+            <div class="cantidad-caja">
+                <h3>Cantidad</h3>
+                <input type="number" id="cantidad" name="cantidad" placeholder="Ingrese número">
+            </div>        
+        </div>
+            <div class="segunda-caja">
+                 <div>
+                    <input type="radio" id="ingles"  name="tipo">
+                    <label for="ingles">Ingles</label>
+                 </div>
+                 <div>
+                    <input type="radio" id="varios"   name="tipo">
+                    <label for="varios">Varios</label>
+                 </div>
+            </div>
+                        
+        <a id="cargar" href="#">CARGAR</a>
+    </form>
+
+    <!-- Barra de búsqueda -->
+    <input type="text" id="search-bar" placeholder="Buscar un libro...">
+
+
+    <section class="list">
+    <div id="lista-libros-ingles">
+    </div>
+    
+    <div id="lista-libros">
+    </div>
+    </section>
+
+</div>
+
+<!-- Ventana emergente para editar cantidad -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h3>Editar Cantidad</h3>
+        <input type="number" id="new-quantity" min="0">
+        <button id="save-edit">Guardar</button>
+        <button id="close-popup">Cancelar</button>
+    </div>
+</div>
+
+
+    <script src="./js/main.js"></script>    
+</body>
+</html>

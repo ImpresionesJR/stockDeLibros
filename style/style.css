@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "barlow";
+    src: url(../assets/fonts/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: "barlow-bold";
+    src: url(../assets/fonts/BarlowCondensed-Bold.ttf);
+}
+
+*{
+    font-family: barlow;
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background: rgb(0,26,136);
+    background: linear-gradient(0deg, rgba(0,26,136,1) 0%, rgba(0,89,161,1) 62%, rgba(0,112,255,1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container{
+    padding: 40px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 4vw;
+    font-family: barlow-bold;    
+    color: white;
+    margin-bottom: 30px;
+}
+
+#upload-book-form{
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 15px;
+    height: auto;
+    margin-bottom: 30px;       
+    justify-content: center;
+    text-align: center;
+    align-items: baseline;
+    border-radius: 10px;
+}
+
+.container-form-flex{
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;  
+   margin: 5px; 
+   justify-content: center;
+}
+.container-form-flex h3{
+    font-size: 2rem;
+}
+.libro-caja{
+    width: 300px;
+}
+.libro-caja h3{
+    text-align: center;
+}
+.libro-caja input{
+    width: 100%;
+    height: 25px;
+    padding: 5px;
+    font-family: barlow-bold;
+    font-size: 20px;
+    border-radius: 5px;    
+    border: 3px solid black;
+}
+.cantidad-caja{
+    width: 250px;
+}
+.cantidad-caja h3{
+    text-align: center;
+}
+.cantidad-caja input{
+    width: 60%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+    font-family: barlow-bold;
+    font-size: 20px;
+    border: 3px solid black;
+}
+
+#libro::placeholder{
+    font-family: "Barlow";
+    color: rgba(177, 177, 177, 0.986);
+    text-align: center;
+}
+
+#cantidad::placeholder{
+    font-family: "Barlow";
+    color: rgba(177, 177, 177, 0.986);
+    text-align: center;
+}
+
+.segunda-caja{
+    display: flex;
+    gap: 30px;
+    font-size: 35px;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+}
+#ingles, #varios{
+    width: 20px;
+    height: 20px;
+}
+#cargar{
+    font-family: barlow;
+    margin: auto;
+    font-size: 30px;
+    padding: 0px 42% 0px 42%;
+    border: none;
+    background-color: rgb(255, 94, 0);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.39);
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+#cargar:hover{
+    background-color: rgb(248, 121, 48);
+}
+
+/* Lista libros  */
+.list{
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.list h2{
+    font-size: 3rem;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    padding: 10px 0px 10px 0px;    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#lista-libros-ingles, #lista-libros{    
+    width: 40rem;
+    border-radius: 25px;
+    padding: 20px;
+    color: white;
+}
+
+.box-libro{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    display: flex;
+    gap: 25px;
+    justify-content: left;
+    font-family: "barlow-bold";
+    border-bottom: 1px solid white;
+}
+
+.box-libro p{
+    width: 800px;
+    text-align: left;
+}
+
+.box-libro button{
+    background-color: rgb(255, 94, 0);
+    max-height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+    color: white;
+    font-family: "Barlow-Bold";
+    font-size: 20px;
+}
+
+
+/* Ventana emergente */
+
+.popup {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    margin: auto;
+    background: white;
+    padding: 40px 80px 40px 80px;
+    border-radius: 10px;
+    text-align: center; 
+    font-size: 35px;
+    box-shadow: 2px 2px 4px rgba(15, 15, 15, 0.658);
+}
+.popup-content input, .popup-content button{
+    font-size: 20px;
+    text-align: center;
+    padding: 3px;
+}
+
+/* Barra de busqueda */
+#search-bar{
+    width: 620px;
+    font-size: 2rem;
+    margin-top: 30px;
+    padding: 5px 0px 5px 15px;
+    border-radius: 10px;
+    border: 0px solid black;
+    font-family: "barlow";
+}
